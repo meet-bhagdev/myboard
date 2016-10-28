@@ -19,7 +19,7 @@
         <!-- Submit Button -->
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-5">
-                {!! Form::submit('Create Button', ['class' => 'btn btn-primary']) !!}
+                {!! Form::submit('Create', ['class' => 'btn btn-primary']) !!}
             </div>
         </div>
     {!! Form::close() !!}

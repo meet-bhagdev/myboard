@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vitorfs/bootcamp.svg?branch=master)](https://travis-ci.org/vitorfs/bootcamp)
 
-Myboard is an open source **enterprise social network** built with [PHP][0] using the [Laravel Web Framework][1].
+Myboard is an open source **to do board** built with [PHP][0] using the [Laravel Web Framework][1].
 
 The project has two basic apps:
 

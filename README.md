@@ -9,11 +9,10 @@ The project has two basic apps:
 * Create todo action items
 * Mark Status
 
-
-
 ## Technology Stack
 
 - PHP 7
+- Ubuntu 16.04
 - Laravel 5.1
 - Twitter Bootstrap 3
 - Microsoft PHP SQL Server Driver

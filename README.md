@@ -21,7 +21,53 @@ The project has two basic apps:
 
 ## Installation Guide
 
-Take a look at our wiki page for a detailed [installation guide][2].
+### 1 Install Pre-Requisites
+
+* **Composer**
+https://getcomposer.org/download/
+
+* **PHP**
+http://php.net/releases/7_0_0.php
+
+* **PHP Connector for SQL Server**
+https://blogs.msdn.microsoft.com/sqlphp/2016/10/10/getting-started-with-php-7-sql-server-and-azure-sql-database-on-linux-ubuntu-with-apache/
+
+* **Apache**
+https://help.ubuntu.com/lts/serverguide/httpd.html
+
+* **Mcrypt and mbstring**
+http://php.net/manual/en/mcrypt.setup.php
+
+
+### 2 Install dependencies
+On the project root there is a requirements.pip file. Make sure you install all the required dependencies before running myboard
+ 
+    cd todo
+    composer install
+
+
+### 3 Syncdb
+
+Edit your database.php with your database information
+
+    'sqlsrv' => [
+			'driver'   => 'sqlsrv',
+			'host'     => 'your_server',
+			'database' => env('DB_DATABASE', 'your_database'),
+			'username' => env('DB_USERNAME', 'sa'),
+			'password' => env('DB_PASSWORD', 'your_password'),
+			'prefix'   => '',
+		],
+
+Then run the database migration
+
+    php artisan migrate
+    chmod 777 -R storage
+
+### 4 Run
+
+    php artisan serve
+
 
 
 
